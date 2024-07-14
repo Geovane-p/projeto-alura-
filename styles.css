@@ -20,7 +20,28 @@ body {
     margin: 0;
     padding: 0;
 }
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
 
+}
+.cabecalho__item{
+    gap: 0.5em;
+    align-items: center;
+    display: flex;
+}
+.cabecalho__texto{
+    margin-left: 40%;
+    font-size: 25px;
+}
+.icon{
+    width: 5%;
+    margin-left: 1%;
+}
+.sing-up{
+
+    width: 15%;
+}
 .principal {
     background-image: url("img/Background.png");
     background-repeat: no-repeat;
@@ -137,6 +158,24 @@ body {
     color: var(--cor-de-fundo);
 }
 @media screen and (max-width: 768px){
+    .cabecalho{
+        margin-top: 1em;
+
+    }
+    .icon{
+        width: 13%;
+        margin-left: 0.5em;
+        } 
+    .cabecalho__texto{
+        font-size: 17px;
+        margin-left: auto;
+        text-decoration: none;
+        color: var(--branco-principal);
+    }
+    .sing-up{
+        margin-right: 1em;
+        width: 10%;
+    }
     .container{
         display: block;
         background-image: none;
@@ -145,7 +184,7 @@ body {
         width: 50vw;
     }
     .container__caixa{
-        margin: 2em 2em;
+        margin: 2em 2em 2em 2em;
     }
     .secundario{
         margin: 0;
@@ -170,5 +209,12 @@ body {
     }
     .container{
       height: 70vh;
+    }
+    .rodape{
+        margin-top: 10em
+    }
+    .img__footer{
+        margin-bottom: 1.5em;
+        width: 21%;
     }
 }
